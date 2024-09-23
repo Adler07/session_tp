@@ -11,10 +11,8 @@ session_start();
     <link href="style.css" rel="stylesheet">
 </head>
 <body>
-
-
+<div class="center">
 <?php
-
 //Vérifier si l'utilisateur est connecté
 if (isset($_SESSION["name"])) {
     echo "Bonjour, " . $_SESSION["name"] . " " .  
@@ -28,6 +26,6 @@ if (isset($_SESSION["name"])) {
     exit;
 }
 ?>
-
+</div>
 </body>
 </html>
